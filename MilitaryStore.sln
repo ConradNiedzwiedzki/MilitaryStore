@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MilitaryStore", "MilitaryStore\MilitaryStore.csproj", "{751E2EB9-1E72-40C8-957C-20D3FBF84C90}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{CC5EE9AD-05CF-4985-9675-243687C5CA75}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MilitaryStore.Tests", "tests\MilitaryStore.Tests\MilitaryStore.Tests.csproj", "{AB8ED6D3-8872-4250-8922-4842AD5CE2A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{751E2EB9-1E72-40C8-957C-20D3FBF84C90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{751E2EB9-1E72-40C8-957C-20D3FBF84C90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{751E2EB9-1E72-40C8-957C-20D3FBF84C90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{751E2EB9-1E72-40C8-957C-20D3FBF84C90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB8ED6D3-8872-4250-8922-4842AD5CE2A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB8ED6D3-8872-4250-8922-4842AD5CE2A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB8ED6D3-8872-4250-8922-4842AD5CE2A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB8ED6D3-8872-4250-8922-4842AD5CE2A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AB8ED6D3-8872-4250-8922-4842AD5CE2A9} = {CC5EE9AD-05CF-4985-9675-243687C5CA75}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {104825DB-8B71-4622-B216-58E31A18C146}
+	EndGlobalSection
+EndGlobal
