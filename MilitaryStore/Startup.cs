@@ -39,9 +39,10 @@ namespace MilitaryStore
             app.UseStaticFiles();
             app.UseMvc(routes => {
                 routes.MapRoute(
-                name: "default",
-                template: "{controller=Product}/{action=List}/{id?}");
+                    name: "default",
+                    template: "{controller=Product}/{action=List}/{id?}");
             });
+            SeedData.EnsurePopulated(app);
         }
     }
 }

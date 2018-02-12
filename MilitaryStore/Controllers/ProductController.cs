@@ -21,7 +21,5 @@ namespace MilitaryStore.Controllers
                 .OrderBy(p => p.ProductID)
                 .Skip((page - 1) * PageSize)
                 .Take(PageSize));
-
-        public ViewResult List() => View(repository.Products);
     }
 }
