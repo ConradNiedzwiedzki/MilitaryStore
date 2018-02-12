@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MilitaryStore.Models;
 
-namespace SportsStore.Controllers
+namespace MilitaryStore.Controllers
 {
     public class ProductController : Controller
     {
