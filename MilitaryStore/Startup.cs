@@ -5,6 +5,7 @@ using Microsoft.Extensions.Logging;
 using MilitaryStore.Models;
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Http;
 
 namespace MilitaryStore
 {
@@ -26,6 +27,8 @@ namespace MilitaryStore
                 options.UseSqlServer(
                     Configuration["Data:MilitaryStoreProducts:ConnectionString"]));
             services.AddTransient<IProductRepository, EFProductRepository>();
+            services.AddScoped<Cart>(sp => SessionCart.GetCart(sp));
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddMvc();
             services.AddMemoryCache();
             services.AddSession();
