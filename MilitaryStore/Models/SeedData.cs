@@ -12,6 +12,7 @@ namespace MilitaryStore.Models
         public static void EnsurePopulated(IApplicationBuilder app)
         {
             ApplicationDbContext context = app.ApplicationServices.GetRequiredService<ApplicationDbContext>();
+            context.Database.EnsureCreated();
             if (!context.Products.Any())
             {
                 context.Products.AddRange(

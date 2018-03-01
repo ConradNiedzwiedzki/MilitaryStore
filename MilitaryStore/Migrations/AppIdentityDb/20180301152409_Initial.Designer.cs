@@ -11,7 +11,7 @@ using System;
 namespace MilitaryStore.Migrations.AppIdentityDb
 {
     [DbContext(typeof(AppIdentityDbContext))]
-    [Migration("20180213200741_Initial")]
+    [Migration("20180301152409_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

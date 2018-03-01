@@ -11,7 +11,7 @@ using System;
 namespace MilitaryStore.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20180213130429_ShippedOrders")]
+    [Migration("20180301152247_ShippedOrders")]
     partial class ShippedOrders
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -81,11 +81,14 @@ namespace MilitaryStore.Migrations
                     b.Property<int>("ProductID")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("Category");
+                    b.Property<string>("Category")
+                        .IsRequired();
 
-                    b.Property<string>("Description");
+                    b.Property<string>("Description")
+                        .IsRequired();
 
-                    b.Property<string>("Name");
+                    b.Property<string>("Name")
+                        .IsRequired();
 
                     b.Property<decimal>("Price");
 
