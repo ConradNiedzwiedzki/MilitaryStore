@@ -46,6 +46,9 @@ project.fragment.lock.json
 appsettings.production.json
 artifacts/
 
+# ignore a file type
+*.json
+
 *_i.c
 *_p.c
 *_i.h
